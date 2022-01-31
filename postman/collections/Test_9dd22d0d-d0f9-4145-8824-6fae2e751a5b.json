@@ -1,0 +1,242 @@
+{
+    "info": {
+        "_postman_id": "45b8a93b-02a4-4af6-90c8-fb47c04bac54",
+        "name": "Test",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "user 조회",
+            "id": "b9aec913-7ff7-43d7-bcd2-58c435b8e8bb",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/user",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "user"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "e64f8ad6-08c1-40b9-9924-eb8402c3fdcd",
+                    "name": "user 조회",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3000/user",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "user"
+                            ]
+                        }
+                    },
+                    "_postman_previewlanguage": "json",
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "[{\n    \"name\": \"mung0\",\n    \"age\": 30\n}, {\n    \"name\": \"mung1\",\n    \"age\": 31\n}, {\n    \"name\": \"mung2\",\n    \"age\": 32\n}, {\n    \"name\": \"mung3\",\n    \"age\": 33\n}]"
+                }
+            ]
+        },
+        {
+            "name": "book 조회",
+            "id": "e912ff41-c7d0-407d-8080-eea33c036235",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/book",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "book"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "c5e1d0f0-08cc-497a-8213-cc759c3eb381",
+                    "name": "book 조회",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3000/book",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "book"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "[{\n    \"title\": \"title0\",\n    \"author\": \"mung0\"\n}, {\n    \"title\": \"title1\",\n    \"author\": \"mung1\"\n}, {\n    \"title\": \"title2\",\n    \"author\": \"mung2\"\n}, {\n    \"title\": \"title3\",\n    \"author\": \"mung3\"\n}]"
+                }
+            ]
+        },
+        {
+            "name": "book 생성",
+            "id": "a56d160f-de4b-4ae9-b64d-2d8884c2699a",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"title1\",\n    \"author\": \"author1\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:3000/book",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "book"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "9a2a6008-996f-481a-9bdf-d972829842e1",
+                    "name": "book 생성(201)",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"title\": \"title1\",\n    \"author\": \"author1\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost:3000/book",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "book"
+                            ]
+                        }
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "_postman_previewlanguage": null,
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"title\": \"title1\",\n    \"author\": \"author1\"\n}"
+                },
+                {
+                    "id": "ffb965ef-b9bd-4811-8cb8-42a85126a490",
+                    "name": "book 생성(400)",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost:3000/book",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "book"
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": null,
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{}"
+                }
+            ]
+        },
+        {
+            "name": "json-rpc 요청",
+            "id": "2aff6ddd-ecab-4793-a5c1-8f20562db78c",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"echo\",\n    \"params\": {\n        \"text\": \"hello world\"\n    },\n    \"id\": null\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:3000/json-rpc",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "json-rpc"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
